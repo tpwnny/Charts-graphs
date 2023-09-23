@@ -8,7 +8,7 @@ from setuptools import Command, find_packages, setup
 # $ python setup.py upload
 
 
-__title__ = "pyecharts"
+__title__ = "charts"
 __description__ = "Python options, make charting easier"
 __url__ = "https://github.com/pyecharts/pyecharts"
 __author_email__ = "chenjiandongx@qq.com"
