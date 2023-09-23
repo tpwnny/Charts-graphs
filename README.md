@@ -1,8 +1,8 @@
 
 
 ```shell
-$ git clone https://github.com/pyecharts/pyecharts.git
-$ cd pyecharts
+$ git clone https://github.com/tpwnny/Charts-graphs.git
+$ cd Charts-graphs
 $ pip install -r requirements.txt
 $ python setup.py install
 ```
