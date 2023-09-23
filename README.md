@@ -1,81 +1,5 @@
-<p align="center">
-    <img src="https://user-images.githubusercontent.com/19553554/71825144-2d568180-30d6-11ea-8ee0-63c849cfd934.png" alt="pyecharts logo" width=200 height=200 />
-</p>
-<h1 align="center">pyecharts</h1>
-<p align="center">
-    <em>Python ❤️ ECharts = pyecharts</em>
-</p>
-<p align="center">
-    <a href="https://github.com/pyecharts/pyecharts/actions">
-        <img src="https://github.com/pyecharts/pyecharts/actions/workflows/python-app.yml/badge.svg" alt="Github Actions Status">
-    </a>
-    <a href="https://codecov.io/gh/pyecharts/pyecharts">
-        <img src="https://codecov.io/gh/pyecharts/pyecharts/branch/master/graph/badge.svg" alt="Codecov">
-    </a>
-    <a href="https://badge.fury.io/py/pyecharts">
-        <img src="https://badge.fury.io/py/pyecharts.svg" alt="Package version">
-    </a>
-    <a href="https://pypi.org/project/pyecharts/">
-        <img src="https://img.shields.io/pypi/pyversions/pyecharts.svg?colorB=brightgreen" alt="PyPI - Python Version">
-    </a>
-</p>
-<p align="center">
-    <a href="https://pypi.org/project/pyecharts">
-        <img src="https://img.shields.io/pypi/format/pyecharts.svg" alt="PyPI - Format">
-    </a>
-     <a href="https://github.com/pyecharts/pyecharts/pulls">
-        <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
-    </a>
-    <a href="https://opensource.org/licenses/MIT">
-        <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="License">
-    </a>
-</p>
-
-## 📣 Introduction
-
-[Apache ECharts](https://github.com/apache/echarts) is easy-to-use, highly interactive and highly performant javascript visualization library under Apache license. Since its first public release in 2013, it now dominates over 74% of Chinese web front-end market. Yet Python is an expressive language and is loved by data science community. Combining the strength of both technologies, [pyecharts](https://github.com/pyecharts/pyecharts) is born.
-
-## ✨ Feature highlights
-
-* Simple API, Sleek and method chaining
-* Support 30 + popular charts
-* Suppot data science tools: Jupyter Notebook, JupyterLab, nteract
-* Integrate with Flask，Django at ease
-* Easy to use and highly configurable
-* Detailed documentation and examples.
-* More than 400+ geomaps assets for geograpic information processing
-
-## ⏳ Version
-
-v0.5.x is not compatible with V1, which is a completely new version, see [ISSUE#892](https://github.com/pyecharts/pyecharts/issues/892), [ISSUE#1033](https://github.com/pyecharts/). pyecharts/issues/1033).
-
-### V0.5.x
-
-> Support for Python 2.7, 3.4+
-
-At the discretion of the development team, version 0.5.x will no longer be maintained. Version 0.5.x code is located in the *05x* branch and documentation is located at [05x-docs.pyecharts.org](http://05x-docs.pyecharts.org).
-
-### V1
-
-> Python 3.6+ only
-
-The new version series will start with v1.0.0, documented at [pyecharts.org](https://pyecharts.org); examples at [gallery.pyecharts.org](https://gallery.pyecharts.org)
-
-### V2
-
-> Python 3.6+ only
-
-The new version is based on Echarts 5.4.1+ for rendering, and the documentation and examples are in the same location as V1.
 
 
-## 🔰 Installation
-
-**pip install**
-```shell
-$ pip install pyecharts
-```
-
-**Install from source**
 ```shell
 $ git clone https://github.com/pyecharts/pyecharts.git
 $ cd pyecharts
@@ -83,11 +7,7 @@ $ pip install -r requirements.txt
 $ python setup.py install
 ```
 
-## 📝 Usage
 
-### Local computer
-
-#### HTML
 ```python
 from pyecharts.charts import Bar
 from pyecharts import options as opts
@@ -105,7 +25,7 @@ bar.render()
 <img src="https://user-images.githubusercontent.com/19553554/55270272-d6ff1b80-52d7-11e9-820f-30660a068e3e.gif"  width="85%" />
 </p>
 
-#### image
+
 ```python
 from pyecharts.render import make_snapshot
 
@@ -165,49 +85,4 @@ make_snapshot(bar.render(), "bar.png")
 <img src="https://user-images.githubusercontent.com/19553554/35082279-e111743c-fc53-11e7-9362-580160593715.gif" width="33%" alt="timeline"/>
 </div>
 
-For more documentation, please visit
 
-* [Chinese documentation](https://pyecharts.org/#/zh-cn/)
-* [English Documentation](https://pyecharts.org/#/en-us/)
-* [Example Documentation](https://gallery.pyecharts.org/)
-
-## ⛏ Software development
-
-### Unit tests
-
-```shell
-$ pip install -r test/requirements.txt
-$ make
-```
-
-### Team development
-
-[Travis CI](https://travis-ci.org/) and [AppVeyor](https://ci.appveyor.com/) is place for continuous integration.
-
-### Coding styles
-
-[flake8](http://flake8.pycqa.org/en/latest/index.html), [Codecov](https://codecov.io/) and [pylint](https://www.pylint.org/) are used
-
-## 😉 Author
-
-pyecharts are co-maintained by:
-
-* [@chenjiandongx](https://github.com/chenjiandongx)
-* [@chfw](https://github.com/chfw)
-* [@kinegratii](https://github.com/kinegratii)
-* [@sunhailin-Leo](https://github.com/sunhailin-Leo)
-
-For more contributors, please visit [pyecharts/graphs/contributors](https://github.com/pyecharts/pyecharts/graphs/contributors)
-
-## 💌 Donation
-
-To develop and maintain pyecharts, it took me a lot of overnights. If you think pyecharts has helped you, please consider buying me a coffee:
-
-<img src="https://user-images.githubusercontent.com/19553554/35425853-500d6b5c-0299-11e8-80a1-ebb6629b497e.png" width="19.8%" alt="Alipay">　　　<img src="https://user-images.githubusercontent.com/19553554/35425854-504e716a-0299-11e8-81fc-4a511f1c47e8.png" width="20%" alt="Wechat">
-
-
-Please also buy the other maintainer a coffee if you think their work helped you too [donation details](http://pyecharts.org/#/zh-cn/donate)
-
-## 📃 License
-
-MIT [©chenjiandongx](https://github.com/chenjiandongx)
